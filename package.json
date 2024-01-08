@@ -1,0 +1,31 @@
+{
+  "name": "figma-orgchart-helper",
+  "version": "0.0.1",
+  "description": "Converts CVS file into JSON required by figma orgchart plugin",
+  "main": "index.mjs",
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "figma-orgchart-helper": "./index.js"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "transform": {},
+    "moduleFileExtensions": [
+      "mjs",
+      "js"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.mjs",
+      "**/?(*.)+(spec|test).mjs"
+    ]
+  },
+  "scripts": {
+    "test": "node --experimental-vm-modules ./node_modules/.bin/jest --watch"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}
