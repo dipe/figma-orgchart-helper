@@ -156,6 +156,9 @@ function draw_person(employee) {
     if (employee['Job Family']) {
         meta.push(employee['Job Family'])
     }
+    if (employee['Rolle']) {
+        meta.push(employee['Rolle'])
+    }
     if (meta.length > 0) {
         person.meta = meta.join('\n');
     }
